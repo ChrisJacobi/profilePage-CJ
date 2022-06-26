@@ -1,0 +1,45 @@
+/* document */
+* {
+	margin: 0;
+}
+main, header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+	background-image: url(https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/* document */
+
+
+
+
+/* Start Header */
+.welcomeText {
+	margin: 20px;
+	color: #023047;
+	text-align: center;
+}
+.welcomeText :nth-child(2) {
+	font-weight: 200;
+	font-size: 1.5em;
+}
+.welcomeText :nth-child(3) {
+	font-size: 2rem;
+	font-weight: 200;
+}
+.welcomeText :last-child {
+	color: #02c332;
+	line-height: 5em;
+	font-size: 1.35em;
+}
+.line {
+	height: 1px;
+	display: block;
+	border-bottom: solid black 1px;
+}
+/* End Header */
