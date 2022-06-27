@@ -31,22 +31,29 @@ body {
 }
 .welcomeText :first-child {
 	letter-spacing: 0.4em;
+	font-size: 3rem;
 }
 .welcomeText :nth-child(2) {
 	font-weight: 200;
-	font-size: 1.5em;
+	font-size: 2.5rem;
 	letter-spacing: 0.25em;
 }
 .welcomeText :nth-child(3) {
-	font-size: 2rem;
+	font-size: 3rem;
 	font-weight: 300;
-	letter-spacing: 0.4em;	
+	letter-spacing: 0.4em;
+	margin-bottom: 30px;	
 }
-.welcomeText :nth-child(6) {
+#newDev :nth-child(2) {
 	color: #02c332;
-	line-height: 5em;
-	font-size: 1.35em;
+	line-height: 3em;
+	font-size: 2em;
 	-webkit-text-stroke: 0.15px #023047;
+	font-weight: 400;
+}
+#newDev :hover {
+	background-color: #02c332;
+	color:#ffffff;
 }
 .line {
 	height: 1px;
