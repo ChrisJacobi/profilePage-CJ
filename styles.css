@@ -33,7 +33,6 @@ main {
 	font-size: 1.1em;
 }
 .welcomeText :first-child {
-	letter-spacing: 0.4em;
 	font-size: 3rem;
 }
 .welcomeText :nth-child(2) {
@@ -49,15 +48,25 @@ main {
 	color: #FB8500;	
 }
 #newDev :nth-child(2) {
-	color: #02c332;
-	line-height: 3em;
+	line-height: 2em;
 	font-size: 2em;
-	-webkit-text-stroke: 0.15px #023047;
 	font-weight: 400;
 }
-#newDev :hover {
+#newDev a {
+	color: #02c332;
+	-webkit-text-stroke: 0.15px #023047;
+	text-decoration: none;
+	display: block;
+}
+#newDev a:visited {
+	color: #02c332;
+	-webkit-text-stroke: 0.15px #023047;
+	text-decoration: none;
+	display: block;
+}
+#newDev a:hover {
 	background-color: #02c332;
-	color:#ffffff;
+	color: #ffff;
 }
 .line {
 	height: 1px;
@@ -79,7 +88,7 @@ main {
 .nav {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(12, 1fr);
+	grid-template-rows: repeat(15, 1fr);
 	padding: 0;
 	height: 100%;
 	gap: 7px;
@@ -91,18 +100,29 @@ main {
 	border: solid rgba(0, 0, 0, 0.842) 2px;
 	border-radius: 5%;
 	background-color: #f7ba21f5;
-	padding: 15px;
+	padding: 0px;
 	margin-bottom: 10px;
 	text-align: center;
 	align-self: center;
 	font-size: 1.2em;
 	grid-row: -2 / -1;	
 }
+.nav li a {
+	color:#ffffff;
+	text-decoration: none;
+	display: block;
+	padding: 0;
+	font-size: 1.3em;
+}
+.nav li a :visited {
+	color: #ffffff;
+	text-decoration: none;
+}
 .nav :nth-child(2) {
 	font-size: 1.6em;
 	background-color: #FB8500;
 }
-.nav :hover {
+.nav a:hover {
 	background-color: #02c332;
 }
 /* End Footer */
@@ -128,11 +148,11 @@ main {
 	}
 	.nav {
 		display: flex;
-		justify-content: center;
+		justify-content: space-around;
 		margin-top: 57em;
 	}
 	.nav :first-child {
-		font-size: 1.7em;
+		font-size: 1.4em;
 	}
 	.nav :nth-child(3) {
 		font-size: 1.3em;
