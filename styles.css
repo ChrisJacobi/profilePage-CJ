@@ -65,8 +65,8 @@ main {
 	display: block;
 }
 #newDev a:hover {
-	background-color: #02c332;
-	color: #ffff;
+	color:#ffffff;
+	background-color: #02c332
 }
 .line {
 	height: 1px;
@@ -124,6 +124,7 @@ main {
 }
 .nav a:hover {
 	background-color: #02c332;
+	
 }
 /* End Footer */
 
