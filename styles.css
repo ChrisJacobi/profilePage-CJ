@@ -6,37 +6,56 @@
 }
 body {
 	font-family: 'Source Code Pro', monospace;
-	background-color: rgba(0, 0, 0, 0.925);
+	background-color: rgba(0, 0, 0, 0.973);
 	font-weight: 300;
+}
+header, main {
+	display: flex;
+	justify-content: center;
 }
 /* END DOCUMENT */
 
 
 
 /* HEADER */
+header {
+	flex-direction: column;
+}
 .nameIntro {
 	font-size: 2.5rem;
 	margin: 2rem;
 	line-height: 1rem;
-	color: #297aa0;
+	color: #ffff;
 	font-weight: 400;
 }
+#CJ {
+	border: #ffff solid 3px;
+	padding: 2rem;
+	background-color: #297aa0;
+}
 #CJ a:visited {
-	color: #fc6711;
+	color: #ffff;
 	text-decoration: none;
 }
 #CJ a:hover {
-	color: #ffff;
+	color: #00ff15;
 }
 #CJ a {
-	color: #fc6711;
+	color: #ffff;
 	text-decoration: none;
 	letter-spacing: 0.5rem;
 }
-.cssText {
+#hireHeader {
+	border: #ffff solid 3px;
+	padding: 2rem;
+	background-color: #fc6711;
+}
+#textHeader {
+	display: flex;
 	font-size: 2.5rem;
 	margin: 2rem;
-	color: rgba(217, 255, 0, 0.918);
+	color: rgba(217, 255, 0, 0.452);
+	justify-content: space-between;
 }
 .hireMe {
 	display: flex;
@@ -47,8 +66,12 @@ body {
 
 
 /* NAV */
-nav {
-	display: none;
+#hamburgerBtn {
+	background: none;
+	border: none;
+	cursor: pointer;
+	color: #297aa0;
+	font-size: 2.75rem;
 }
 nav ul {
 	list-style: none;
@@ -56,11 +79,12 @@ nav ul {
 	justify-content: space-around;
 	padding: 0;
 }
-nav li a{
+nav li a {
 	font-size: 1.7rem;
 	color:rgba(39, 136, 44, 0.932);
 	text-decoration: none;
 	font-weight: 400;
+	display: none;
 }
 nav li a:visited {
 	color: rgba(39, 136, 44, 0.932);
@@ -68,11 +92,15 @@ nav li a:visited {
 nav li a:hover {
 	color:rgba(217, 255, 0, 0.918);
 }
-
-
-
-
 /* END NAV */
+
+
+
+/* MAIN */
+#coverPhoto {
+	margin: 2rem;
+}
+/* END MAIN */
 
 
 
@@ -84,17 +112,25 @@ nav li a:hover {
 
 
 /* @MEDIAQUERYS */
+@media screen and (min-width: 760px) {
+	nav li a {
+		display: block;
+	}
+	#hamburgerBtn {
+		display: none;
+	}
+	
+}
 
-@media screen and (min-width: 782px) {
+
+@media screen and (min-width: 988px) {
 	.hireMe {
 		flex-direction: row;
 	}
 	#CJ {
 		justify-content: center;
 	}
-	nav {
-		display: block;
-	}
+	
 }
 
 /* END @MEDIAQUERYS */
