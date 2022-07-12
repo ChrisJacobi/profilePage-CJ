@@ -6,7 +6,7 @@
 }
 body {
 	font-family: 'Source Code Pro', monospace;
-	background-color: rgba(0, 0, 0, 0.973);
+	background-color: #252422;
 	font-weight: 300;
 }
 header, main {
@@ -25,37 +25,47 @@ header {
 	font-size: 2.5rem;
 	margin: 2rem;
 	line-height: 1rem;
-	color: #ffff;
+	color: #FFFCF2;
 	font-weight: 400;
 }
 #CJ {
-	border: #ffff solid 3px;
+	border-radius: 50px;
+	border: 0.5px solid #FFFCF2;
 	padding: 2rem;
-	background-color: #297aa0;
+	background-color: #40999e;
 }
 #CJ a:visited {
-	color: #ffff;
+	color: #FFFCF2;
 	text-decoration: none;
 }
-#CJ a:hover {
-	color: #00ff15;
+#CJ:hover {
+	background-color: #CCC5B9;
 }
 #CJ a {
-	color: #ffff;
+	color: #FFFCF2;
 	text-decoration: none;
-	letter-spacing: 0.5rem;
+	letter-spacing: 0.3rem;
 }
 #hireHeader {
-	border: #ffff solid 3px;
+	border-radius: 50px;
+	border: 0.5px solid #FFFCF2;
 	padding: 2rem;
-	background-color: #fc6711;
+	background-color: #EB5E28;
+	letter-spacing: 0.1rem;
+}
+#hireHeader a {
+	text-decoration: none;
+	color:#FFFCF2;
+}
+#hireHeader:hover {
+	background-color: #CCC5B9;
 }
 #textHeader {
 	display: flex;
 	font-size: 2.5rem;
 	margin: 2rem;
-	color: rgba(217, 255, 0, 0.452);
-	justify-content: space-between;
+	color: #EB5E28;
+	justify-content: center;
 }
 .hireMe {
 	display: flex;
@@ -73,24 +83,31 @@ header {
 	color: #297aa0;
 	font-size: 2.75rem;
 }
+	
 nav ul {
 	list-style: none;
 	display: flex;
 	justify-content: space-around;
 	padding: 0;
+	margin-top: 3rem;
+	
 }
 nav li a {
 	font-size: 1.7rem;
-	color:rgba(39, 136, 44, 0.932);
+	color: #FFFCF2;
 	text-decoration: none;
 	font-weight: 400;
 	display: none;
+	background-color: #403d39f8;
+	border: 0.5px solid #FFFCF2;
+	border-radius: 50px;
+	padding: 1rem 3.75rem 1rem 3.75rem;
 }
 nav li a:visited {
-	color: rgba(39, 136, 44, 0.932);
+	color: #FFFCF2;
 }
-nav li a:hover {
-	color:rgba(217, 255, 0, 0.918);
+nav li :hover {
+	background-color:#CCC5B9;
 }
 /* END NAV */
 
@@ -109,8 +126,6 @@ nav li a:hover {
 
 
 
-
-
 /* @MEDIAQUERYS */
 @media screen and (min-width: 760px) {
 	nav li a {
@@ -119,19 +134,32 @@ nav li a:hover {
 	#hamburgerBtn {
 		display: none;
 	}
-	
+	#CJ {
+		text-align: center;
+	}
+	#hireHeader {
+		text-align: center;
+	}
 }
-
-
-@media screen and (min-width: 988px) {
+@media screen and (min-width: 1111px) {
 	.hireMe {
 		flex-direction: row;
+		justify-content: space-around;
 	}
 	#CJ {
-		justify-content: center;
+		padding: 50px;
 	}
-	
+	#hireHeader {
+		padding: 50px;
+	}
 }
-
+@media screen and (max-width: 550px) {
+	#CJ {
+		line-height: 1.25em;
+	}
+	#hireHeader {
+		line-height: 1.25em;
+	}
+}
 /* END @MEDIAQUERYS */
 
