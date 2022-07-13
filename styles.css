@@ -89,8 +89,7 @@ nav ul {
 	display: flex;
 	justify-content: space-around;
 	padding: 0;
-	margin-top: 3rem;
-	
+	margin-top: 3rem;	
 }
 nav li a {
 	font-size: 1.7rem;
