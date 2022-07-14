@@ -12,6 +12,7 @@ body {
 header, main {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 /* END DOCUMENT */
 
@@ -29,8 +30,8 @@ header {
 	font-weight: 400;
 }
 #CJ {
-	border-radius: 50px;
-	border: 0.5px solid #FFFCF2;
+	border-radius: 25px;
+	border: 1px solid #000000;
 	padding: 2rem;
 	background-color: #40999e;
 }
@@ -47,10 +48,10 @@ header {
 	letter-spacing: 0.3rem;
 }
 #hireHeader {
-	border-radius: 50px;
-	border: 0.5px solid #FFFCF2;
+	border-radius: 25px;
+	border: 1px solid #000000;
 	padding: 2rem;
-	background-color: #EB5E28;
+	background-color: #F77F00;
 	letter-spacing: 0.1rem;
 }
 #hireHeader a {
@@ -80,8 +81,22 @@ header {
 	background: none;
 	border: none;
 	cursor: pointer;
-	color: #297aa0;
+	color: #40999e;
 	font-size: 2.75rem;
+}
+.navTab {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #3b3b399a;
+}
+.navTab a {
+	text-decoration: none;
+	line-height: 3.2rem;
+	font-size: 1.5em;	
+}
+.dNone {
+	display: none;
 }
 	
 nav ul {
@@ -98,8 +113,8 @@ nav li a {
 	font-weight: 400;
 	display: none;
 	background-color: #403d39f8;
-	border: 0.5px solid #FFFCF2;
-	border-radius: 50px;
+	border: 0.5px solid #000000;
+	border-radius: 25px;
 	padding: 1rem 3.75rem 1rem 3.75rem;
 }
 nav li a:visited {
@@ -113,8 +128,15 @@ nav li :hover {
 
 
 /* MAIN */
-#coverPhoto {
-	margin: 2rem;
+#profilePhoto {
+	margin: 3rem;
+	min-width: 10rem;
+	max-width: 1000px;
+	height: 25rem;
+}
+#profileText {
+	text-align: center;
+	margin: 1rem 3rem 3rem 3rem;
 }
 /* END MAIN */
 
