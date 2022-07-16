@@ -24,16 +24,15 @@ header {
 }
 .nameIntro {
 	font-size: 2.5rem;
-	margin: 2rem;
 	line-height: 1rem;
 	color: #FFFCF2;
 	font-weight: 400;
 }
 #CJ {
-	border-radius: 25px;
+	border-radius: 7px;
 	border: 1px solid #000000;
 	padding: 2rem;
-	background-color: #40999e;
+	background-color: #EB5E28;
 }
 #CJ a:visited {
 	color: #FFFCF2;
@@ -43,23 +42,19 @@ header {
 	background-color: #CCC5B9;
 }
 #CJ a {
-	color: #FFFCF2;
+	color: #252422;
 	text-decoration: none;
 	letter-spacing: 0.3rem;
+	font-size: larger;
 }
 #hireHeader {
-	border-radius: 25px;
-	border: 1px solid #000000;
+	font-size: 1.6rem;
 	padding: 2rem;
-	background-color: #F77F00;
 	letter-spacing: 0.1rem;
 }
-#hireHeader a {
-	text-decoration: none;
+#hireHeader {
 	color:#FFFCF2;
-}
-#hireHeader:hover {
-	background-color: #CCC5B9;
+	margin-bottom: 2rem;
 }
 #textHeader {
 	display: flex;
@@ -81,7 +76,7 @@ header {
 	background: none;
 	border: none;
 	cursor: pointer;
-	color: #40999e;
+	color: #FFFCF2;
 	font-size: 2.75rem;
 }
 .navTab {
@@ -121,7 +116,7 @@ nav li a:visited {
 	color: #FFFCF2;
 }
 nav li :hover {
-	background-color:#CCC5B9;
+	background-color: #EB5E28;
 }
 /* END NAV */
 
@@ -148,7 +143,7 @@ nav li :hover {
 
 
 /* @MEDIAQUERYS */
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 830px) {
 	nav li a {
 		display: block;
 	}
@@ -162,7 +157,7 @@ nav li :hover {
 		text-align: center;
 	}
 }
-@media screen and (min-width: 1111px) {
+/* @media screen and (min-width: 1111px) {
 	.hireMe {
 		flex-direction: row;
 		justify-content: space-around;
@@ -173,7 +168,7 @@ nav li :hover {
 	#hireHeader {
 		padding: 50px;
 	}
-}
+} */
 @media screen and (max-width: 550px) {
 	#CJ {
 		line-height: 1.25em;
