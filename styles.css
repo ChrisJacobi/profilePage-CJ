@@ -102,15 +102,15 @@ nav ul {
 	margin-top: 3rem;	
 }
 nav li a {
-	font-size: 1.7rem;
+	font-size: 1.3rem;
 	color: #FFFCF2;
 	text-decoration: none;
 	font-weight: 400;
 	display: none;
 	background-color: #403d39f8;
 	border: 0.5px solid #000000;
-	border-radius: 25px;
-	padding: 1rem 3.75rem 1rem 3.75rem;
+	border-radius: 17px;
+	padding: 0.75rem 3.75rem 0.75rem 3.75rem;
 }
 nav li a:visited {
 	color: #FFFCF2;
@@ -126,7 +126,6 @@ nav li :hover {
 #profilePhoto {
 	margin: 3rem;
 	min-width: 5rem;
-	/* max-width: 1000px; */
 	height: 25rem;
 	border-radius: 10px;
 }
@@ -135,6 +134,16 @@ nav li :hover {
 	margin: 1rem 3rem 3rem 3rem;
 }
 /* END MAIN */
+
+
+
+/* START FOOTER */
+Footer {
+	text-align: center;
+	margin: 13rem 4rem 2.75rem 4rem;
+
+}
+/* END FOOTER */
 
 
 
@@ -158,18 +167,20 @@ nav li :hover {
 		text-align: center;
 	}
 }
-/* @media screen and (min-width: 1111px) {
-	.hireMe {
-		flex-direction: row;
-		justify-content: space-around;
+@media screen and (min-width: 1200px) {
+	main {
+		display: grid;
+		grid-template-columns: repeat( repeat(12, 1fr));
 	}
-	#CJ {
-		padding: 50px;
+	#profileText {
+		grid-column: 5 / 7;
+		align-self: center;
 	}
-	#hireHeader {
-		padding: 50px;
+	#profilePhoto {
+		grid-column: 1 / 5;
 	}
-} */
+}
+
 @media screen and (max-width: 550px) {
 	#CJ {
 		line-height: 1.25em;
