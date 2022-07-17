@@ -29,23 +29,25 @@ header {
 	font-weight: 400;
 }
 #CJ {
-	border-radius: 7px;
-	border: 1px solid #000000;
-	padding: 2rem;
-	background-color: #EB5E28;
+	margin: 1rem;
 }
 #CJ a:visited {
 	color: #FFFCF2;
 	text-decoration: none;
-}
-#CJ:hover {
-	background-color: #08e400a8;
 }
 #CJ a {
 	color: #252422;
 	text-decoration: none;
 	letter-spacing: 0.3rem;
 	font-size: larger;
+	display: block;
+	padding: 2rem;
+	background-color: #EB5E28;
+	border-radius: 25px;
+	border: 2.75px solid #000000;
+}
+#CJ a:hover {
+	background-color: #08e400a8;
 }
 #hireHeader {
 	font-size: 1.6rem;
@@ -111,6 +113,7 @@ nav li a {
 	border: 0.5px solid #000000;
 	border-radius: 17px;
 	padding: 0.75rem 3.75rem 0.75rem 3.75rem;
+	margin-bottom: 4.5rem;
 }
 nav li a:visited {
 	color: #FFFCF2;
@@ -127,7 +130,7 @@ nav li :hover {
 	margin: 3rem;
 	min-width: 5rem;
 	height: 25rem;
-	border-radius: 10px;
+	border-radius: 15px;
 }
 #profileText {
 	text-align: center;
@@ -141,7 +144,6 @@ nav li :hover {
 Footer {
 	text-align: center;
 	margin: 13rem 4rem 2.75rem 4rem;
-
 }
 /* END FOOTER */
 
@@ -187,6 +189,10 @@ Footer {
 	}
 	#hireHeader {
 		line-height: 1.25em;
+	}
+	#profilePhoto {
+		max-width: 23rem;
+		max-height: 17.5rem;
 	}
 }
 /* END @MEDIAQUERYS */
