@@ -39,7 +39,7 @@ header {
 	text-decoration: none;
 }
 #CJ:hover {
-	background-color: #CCC5B9;
+	background-color: #08e400a8;
 }
 #CJ a {
 	color: #252422;
@@ -125,9 +125,10 @@ nav li :hover {
 /* MAIN */
 #profilePhoto {
 	margin: 3rem;
-	min-width: 10rem;
-	max-width: 1000px;
+	min-width: 5rem;
+	/* max-width: 1000px; */
 	height: 25rem;
+	border-radius: 10px;
 }
 #profileText {
 	text-align: center;
