@@ -42,7 +42,7 @@ header {
 	font-size: larger;
 	display: block;
 	padding: 2rem;
-	background-color: #EB5E28;
+	background-color: #b12222;
 	border-radius: 25px;
 	border: 2.75px solid #000000;
 }
@@ -62,7 +62,8 @@ header {
 	display: flex;
 	font-size: 2.5rem;
 	margin: 2rem;
-	color: #EB5E28;
+	/* color: #EB5E28; */
+	color: #d90429;
 	justify-content: center;
 }
 .hireMe {
@@ -90,12 +91,12 @@ header {
 .navTab a {
 	text-decoration: none;
 	line-height: 3.2rem;
-	font-size: 1.5em;	
+	font-size: 1.5em;
+	font-weight: 400;
 }
 .dNone {
 	display: none;
-}
-	
+}	
 nav ul {
 	list-style: none;
 	display: flex;
@@ -119,7 +120,7 @@ nav li a:visited {
 	color: #FFFCF2;
 }
 nav li :hover {
-	background-color: #EB5E28;
+	background-color: #747372;
 }
 /* END NAV */
 
@@ -128,7 +129,7 @@ nav li :hover {
 /* MAIN */
 #profilePhoto {
 	margin: 3rem;
-	min-width: 5rem;
+	min-width: 6rem;
 	height: 25rem;
 	border-radius: 15px;
 }
@@ -144,6 +145,7 @@ nav li :hover {
 Footer {
 	text-align: center;
 	margin: 13rem 4rem 2.75rem 4rem;
+	font-size: 1.25rem;
 }
 /* END FOOTER */
 
@@ -175,7 +177,7 @@ Footer {
 		grid-template-columns: repeat( repeat(12, 1fr));
 	}
 	#profileText {
-		grid-column: 5 / 7;
+		grid-column: 6 / 12;
 		align-self: center;
 	}
 	#profilePhoto {
@@ -184,10 +186,7 @@ Footer {
 }
 
 @media screen and (max-width: 550px) {
-	#CJ {
-		line-height: 1.25em;
-	}
-	#hireHeader {
+	#CJ, #hireHeader {
 		line-height: 1.25em;
 	}
 	#profilePhoto {
