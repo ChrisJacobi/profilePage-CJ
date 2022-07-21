@@ -3,3 +3,6 @@ header {
     flex-wrap: nowrap;
     justify-content: flex-start;
 }
+#CJ a{
+    text-align: center;
+}

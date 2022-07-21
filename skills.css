@@ -1,0 +1,26 @@
+ @media screen and (min-width: 890px){
+    nav li a {
+		display: block;
+	}
+	#hamburgerBtn {
+		display: none;
+	}
+	#CJ {
+		text-align: center;
+	}
+	#hireHeader {
+		text-align: center;
+	}
+	main {
+		display: grid;
+		grid-template-columns: repeat( repeat(12, 1fr));
+	}
+	#profileText {
+		grid-column: 4 / 12;
+		align-self: center;
+	}
+	#profilePhoto {
+		grid-column: 1 / 3;
+	}
+    
+ }

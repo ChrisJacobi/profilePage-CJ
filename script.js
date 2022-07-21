@@ -7,7 +7,7 @@ hamBtn.addEventListener('click', function() {
 
 	const navTab = document.querySelector('.navTab');
 
-	const luck = document.querySelector('#hireHeader');
+	// const luck = document.querySelector('#hireHeader');
 
 	if (navTab.classList.contains('dNone')) {
 		navTab.classList.remove('dNone');
@@ -22,7 +22,5 @@ hamBtn.addEventListener('click', function() {
 	else {
 		navTab.classList.add('dNone');
 	}
-
-
 });
 

@@ -87,7 +87,7 @@ header {
 	flex-direction: column;
 	align-items: center;
 	background-color: #3b3b399a;
-}
+} 
 .navTab a {
 	text-decoration: none;
 	line-height: 3.2rem;
@@ -134,8 +134,9 @@ nav li :hover {
 	border-radius: 15px;
 }
 #profileText {
-	text-align: center;
+	text-align: left;
 	margin: 1rem 3rem 3rem 3rem;
+	font-size: 1.4rem;
 }
 /* END MAIN */
 
@@ -147,6 +148,9 @@ Footer {
 	margin: 13rem 4rem 2.75rem 4rem;
 	font-size: 1.25rem;
 }
+#copyright {
+	color: #fffcf288;
+}
 /* END FOOTER */
 
 
@@ -157,7 +161,7 @@ Footer {
 
 
 /* @MEDIAQUERYS */
-@media screen and (min-width: 830px) {
+@media screen and (min-width: 980px) {
 	nav li a {
 		display: block;
 	}
@@ -169,6 +173,17 @@ Footer {
 	}
 	#hireHeader {
 		text-align: center;
+	}
+	main {
+		display: grid;
+		grid-template-columns: repeat( repeat(12, 1fr));
+	}
+	#profileText {
+		grid-column: 6 / 12;
+		align-self: center;
+	}
+	#profilePhoto {
+		grid-column: 1 / 5;
 	}
 }
 @media screen and (min-width: 1200px) {
