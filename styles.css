@@ -44,7 +44,8 @@ header {
 	padding: 2rem;
 	background-color: #b12222;
 	border-radius: 25px;
-	border: 2.75px solid #000000;
+	border: 1.5px solid #000000;
+	box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, .5);
 }
 #CJ a:hover {
 	background-color: #08e400a8;
@@ -62,9 +63,8 @@ header {
 	display: flex;
 	font-size: 2.5rem;
 	margin: 2rem;
-	/* color: #EB5E28; */
 	color: #d90429;
-	justify-content: center;
+	justify-content: space-between;
 }
 .hireMe {
 	display: flex;
@@ -94,6 +94,9 @@ header {
 	font-size: 1.5em;
 	font-weight: 400;
 }
+.navTab a:hover {
+	color: #747372;
+}
 .dNone {
 	display: none;
 }	
@@ -112,6 +115,7 @@ nav li a {
 	display: none;
 	background-color: #403d39f8;
 	border: 0.5px solid #000000;
+	box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, .5);
 	border-radius: 17px;
 	padding: 0.75rem 3.75rem 0.75rem 3.75rem;
 	margin-bottom: 4.5rem;
@@ -122,6 +126,7 @@ nav li a:visited {
 nav li :hover {
 	background-color: #747372;
 }
+
 /* END NAV */
 
 
@@ -132,11 +137,19 @@ nav li :hover {
 	min-width: 6rem;
 	height: 25rem;
 	border-radius: 15px;
+	box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, 1);
 }
 #profileText {
 	text-align: left;
 	margin: 1rem 3rem 3rem 3rem;
 	font-size: 1.4rem;
+	padding: 1rem;
+}
+main {
+	border: solid 1.2px #747372;
+	border-radius: 15px;
+	margin: 1rem;
+	box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, .4);
 }
 /* END MAIN */
 
@@ -161,7 +174,10 @@ Footer {
 
 
 /* @MEDIAQUERYS */
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 990px) {
+	#textHeader {
+		justify-content: center;
+	}
 	nav li a {
 		display: block;
 	}
@@ -187,10 +203,6 @@ Footer {
 	}
 }
 @media screen and (min-width: 1200px) {
-	main {
-		display: grid;
-		grid-template-columns: repeat( repeat(12, 1fr));
-	}
 	#profileText {
 		grid-column: 6 / 12;
 		align-self: center;
