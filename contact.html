@@ -18,11 +18,11 @@
 		<h1 class="nameIntro" id="CJ"><a href="index.html">Chris Jacobi</a></h1>
 
         <div class="title">
-        	<h2 class="title">Contact Me</h2>
+        	<h2 class="title colorFix">Contact Me</h2>
 			<button id="hamburgerBtn"> &#9776 </button>
 		</div>
 		
-		<div class="navTab dNone">
+		<div class="navTab dNone colorFix">
 			<a href="index.html">Home</a>
 			<a href="aboutMe.html">About Me</a>
 			<a href="mySkills.html">My Skills</a>
@@ -41,11 +41,40 @@
 
 
 	<main>
-		<img id="profilePhoto" src="Pictures/skills2.jpg" alt="Chris Jacobi">
-		<section id="contactMe">
-			<h2>Lets Chat</h2>
-			<input type="text">
-		</section>
+		<!-- <img id="profilePhoto" src="Pictures/skills2.jpg" alt="Chris Jacobi"> -->
+			<h2 class="colorFix">Lets Chat!</h2>
+
+			<form onsubmit="return false"></form>
+
+			<span class="colorFix">First name</span>
+
+			<input type="text" placeholder="Enter your first name" id="firstName" />
+			
+			<span class="colorFix">Last name</span>
+
+			<input type="text" placeholder="Enter your last name" id="lastName" />
+			
+			<span class="colorFix">Email</span>
+
+			<input type="email" placeholder="Enter your email" id="email" />
+
+			<span class="colorFix">Reason for contacting</span>
+
+			<select id="reason">
+				<option disabled selected value> -- Reason for contacting -- </option>
+				<option value="Job related">Job related</option>
+				<option value="Tech related">Tech related</option>
+				<option value="Code related">Code related</option>
+				<option value="Just chatting">Just chatting</option>
+				<option value="Other">Other</option>
+			</select>
+
+			<span class="colorFix">Type your message below</span>
+			
+			<textarea id="messageMe" rows="10" placeholder="Message me"></textarea>
+
+			<button id="submitBtn" onclick="sendContact();">Send</button>
+
 	</main>
 
 	<footer>
