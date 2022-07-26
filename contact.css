@@ -12,6 +12,10 @@ main {
 	padding: 3rem;
 	font-size: 1.5rem;
 }
+/* #profilePhoto {
+	max-width: 30rem;
+} */
+
 main input, select, span, textarea{
 	margin: 1.5rem;
 }
@@ -42,9 +46,25 @@ span {
 	align-self: flex-start;
 	margin-left: 1.5rem;
 	font-size: 1.5rem;
+	letter-spacing: 0.15rem;
 }
 .invalidRed {
 	background-color: #b12222;
+	font-weight: 600;
+}
+
+@media screen and (min-width: 990px){
+	#profilePhoto {
+		display: none;
+	}
+}
+@media screen and (min-width: 1400px) {
+	main {
+		width: 50%;
+		justify-content: center;
+		margin: auto;
+	}
+	
 }
 
 

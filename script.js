@@ -92,7 +92,8 @@ function isValid() {
    
 	return valid;
    };
-//change selector back to white after click on invalid
+
+//changes selector back to white after click on invalid
 let rsn = document.getElementById('reason');
 
 rsn.addEventListener('click', function() {
@@ -105,11 +106,11 @@ function sendContact() {
 
 	if (isValid()) {
 		
-		alert('Thanks for contacting me, I will get back with you soon.')
+		alert('Thanks for contacting me, I will get back to you soon.')
 
 	}	else {
 
-		alert('An error occured, please try again')
+		alert('Invalid entry, please try again')
 
 	}
 };
