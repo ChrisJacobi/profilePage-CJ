@@ -33,7 +33,7 @@ hamBtn.addEventListener('click', function() {
 // START CONTACT FORM 
 
 var fields = {};
-
+// NEEDS FIX not getting the values
 document.addEventListener("DOMContentLoaded", function() {
 	fields.firstName = document.getElementById('firstName');
 	fields.lastName = document.getElementById('lastName');
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	fields.select = document.getElementById('reason');
 	fields.messageMe = document.getElementById('messageMe');
    })
-
+// NEEDS FIX
 
 
 // check to see if value is empty, a number, or a correctly formatted email
