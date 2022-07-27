@@ -28,3 +28,12 @@
 		max-width: 25rem;
 	}
 }
+@media screen and (min-width: 1400px) {
+	#profileText {
+		display: flex;
+	}
+	#profilePhoto {
+		margin-bottom: 10rem;
+	}
+	
+}
