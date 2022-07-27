@@ -1,5 +1,11 @@
+/* DOCUMENT */
 * {
 	color: rgb(0, 0, 0);
+}
+header {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
 }
 #CJ a{
 	text-align: center;
@@ -12,21 +18,20 @@ main {
 	padding: 3rem;
 	font-size: 1.5rem;
 }
-/* #profilePhoto {
-	max-width: 30rem;
-} */
-
 main input, select, span, textarea{
 	margin: 1.5rem;
 }
 main h2 {
 	text-align: center;
 }
-header {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
+footer h3, a{
+	color: #ffff;
 }
+/* END DOCUMENT */
+
+
+
+/* BEGIN CONTACT FORM */
 .colorFix, .navTab a {
 	color: #ffff;
 }
@@ -47,14 +52,21 @@ span {
 	margin-left: 1.5rem;
 	font-size: 1.5rem;
 	letter-spacing: 0.15rem;
+	cursor: pointer;
 }
 .invalidRed {
 	background-color: #b12222;
 	font-weight: 600;
+	border: 1px solid #0000;
 }
-footer h3, a{
-	color: #ffff;
-}
+/* END CONTACT FORM */
+
+
+
+
+
+
+/* contact form exclusive media querys */
 
 @media screen and (min-width: 990px){
 	#profilePhoto {
@@ -66,6 +78,16 @@ footer h3, a{
 		width: 50%;
 		justify-content: center;
 		margin: auto;
+	}
+}
+@media screen and (max-width: 500px) {
+	main, main>input {
+		font-size: 1.1rem;
+		margin: 0;
+		padding: 0 1rem;
+	}
+	button {
+		margin-bottom: 2rem;
 	}
 	
 }

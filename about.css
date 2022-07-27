@@ -1,0 +1,7 @@
+/* about me page exclusive media query */
+
+@media screen and (min-width: 990px) {
+	main {
+		align-items: center;
+	} 
+}

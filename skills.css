@@ -1,3 +1,4 @@
+/* styles my skills article*/
 
 #profileText {
 	line-height: 2rem;
@@ -12,4 +13,18 @@
 	border-radius: 15px;
 	margin: 1rem;
 	box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, .4);
+}
+
+
+/* skills page exclusive media querys */
+
+@media screen and (min-width: 980px) {
+	#profilePhoto {
+		max-width: 23rem;
+	} 
+}
+@media screen and (min-width: 1050px) {
+	#profilePhoto {
+		max-width: 25rem;
+	}
 }
