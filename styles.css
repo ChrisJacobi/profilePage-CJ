@@ -166,11 +166,30 @@ main {
 /* START FOOTER */
 Footer {
 	text-align: center;
-	margin: 13rem 4rem 2.75rem 4rem;
-	font-size: 1.25rem;
+	margin: 11rem 4rem 2.75rem 4rem;
+	font-size: 1.25rem;	
+}
+Footer h3, Footer a {
+	margin: 2rem;
+}
+Footer a {
+	font-size: 1rem;
+	color: #FFFCF2;
+	text-decoration: none;
+	font-weight: 400;
+	background-color: #403d39f8;
+	border: 0.5px solid #000000;
+	box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, .5);
+	border-radius: 17px;
+	padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+	line-height: 3rem;
+}
+Footer a:hover {
+	background-color: #747372;
 }
 #copyright {
 	color: #fffcf288;
+	margin-top: 2rem;
 }
 /* END FOOTER */
 

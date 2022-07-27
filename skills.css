@@ -1,0 +1,15 @@
+
+#profileText {
+	line-height: 2rem;
+}
+#profilePhoto {
+	margin-top: 8rem;
+}
+#experience, #proficiency {
+	padding: 2rem;
+	background-color: #403d39f8;
+	border: solid 1.2px #747372;
+	border-radius: 15px;
+	margin: 1rem;
+	box-shadow: 0 2.5px 4.5px rgba(0, 0, 0, .4);
+}

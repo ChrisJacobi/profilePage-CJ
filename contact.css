@@ -52,6 +52,9 @@ span {
 	background-color: #b12222;
 	font-weight: 600;
 }
+footer h3, a{
+	color: #ffff;
+}
 
 @media screen and (min-width: 990px){
 	#profilePhoto {
